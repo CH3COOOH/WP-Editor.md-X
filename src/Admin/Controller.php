@@ -42,7 +42,8 @@ class Controller {
         $this->plugin_name = "WP Editor.md";
         $this->text_domain = "editormd";
         $this->version = WP_EDITORMD_VER;
-        $this->front_static_url = Config::get_option("editor_addres", "editor_style");
+        // $this->front_static_url = Config::get_option("editor_addres", "editor_style");
+        $this->front_static_url = "/wp-content/plugins/wp-editormd";
 
         add_filter("pre_option_" . WPComMarkdown::POST_OPTION, "__return_true");
 
