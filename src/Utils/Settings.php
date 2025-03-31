@@ -146,16 +146,19 @@ class Settings {
             define("WP_EDITORMD_STATIC_FILE_VER", $file_version); //编辑器静态资源版本
         } else {
             define("WP_EDITORMD_STATIC_FILE_VER", "0.0.0"); //编辑器静态资源版本
+            /*
             add_action("admin_notices", function () {
                 $message = __("The resource package is corrupt, please download again!", "editormd");
                 printf('<div class="error"><p>%1$s</p></div>', esc_html($message));
             });
+            */
         }
         /**
          * 返回资源版本状态
          * @return string
          */
         function upgradeEditormdFile() {
+            /*
             if (WP_EDITORMD_STATIC_FILE_VER !== WP_EDITORMD_VER) {
                 add_action("admin_notices", function () {
                     $message = __("The resources used by the plugin check are outdated. Please upgrade the latest resources.", "editormd");
@@ -165,6 +168,8 @@ class Settings {
             } else {
                 return '<span class="updated">'. __('Status: Latest', 'editormd') .'</span>';
             }
+            */
+            return '<span class="updated">'. __('Status: Latest', 'editormd') .'</span>';
         }
 
         $sections = array(
