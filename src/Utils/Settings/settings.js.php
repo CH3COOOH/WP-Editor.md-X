@@ -182,7 +182,8 @@
 		///	---------------------
 		/// 样式选择预览
 		///	---------------------
-		var imageResourceBaseURL = "https://cdn.jsdelivr.net/wp/wp-editormd/assets/image-resource";
+		// var imageResourceBaseURL = "https://cdn.jsdelivr.net/wp/wp-editormd/assets/image-resource";
+		var imageResourceBaseURL = "/wp-content/plugins/wp-editormd/assets/image-resource";
 
 		// 预加载预览资源
 		// 异步即可，用户操作过程中预加载仍在继续
